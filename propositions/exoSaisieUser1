@@ -1,3 +1,11 @@
 #! /bin/bash
-
-#to do : Ecrire une boucle avec des variables
+# Ecire un petit script qui utilise ce que l'utilisateur rentre en saisie
+temp=""
+while read entree
+do 
+	if [[ "$entree" == "q" ]]
+then break
+fi 
+echo "saisie : $entree"
+done
+echo saisie normale
